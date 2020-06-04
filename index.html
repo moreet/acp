@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="it" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ACP</title>
+	<meta name="description" content="">
+	<link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="libs/blueimp-gallery/css/blueimp-gallery.min.css">
+	<link rel="stylesheet" href="css/app.css">
+	<!-- bower:css -->
+	<!-- endbower -->
+</head>
+<body class="body" ng-class="{bg4: section=='contatti', bg3: section=='trophy', bg2: section=='acp'}">
+	<!--[if lt IE 7]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+
+
+	<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-89920586-1', 'auto');
+ga('send', 'pageview');
+
+	</script>
+
+	<div class="container">
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li ng-class="{active: section=='home'}"><a href="#!/home">Home <span class="sr-only">(current)</span></a></li>
+					<li ng-class="{active: section=='acp'}" class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ACP <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li active><a href="#!/statuto">Statuto</a></li>
+							<li><a href="#!/storia">Storia</a></li>
+							<li><a href="#!/convenzioni">Campi convenzionati</a></li>
+							<li><a href="#!/clubs">Club aderenti</a></li>
+						</ul>
+					</li>
+
+<li ng-class="{active: section=='trophy'}" class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Trophy <span class="caret"></span></a>
+            
+    	<ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+             
+              <li class="dropdown-submenu">
+                <a  href="#">2017</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#!/trophy">Tappe</a></li>
+                  <li><a href="#!/classificaTrophy">Risultati</a></li>
+				</ul>
+
+			  <li class="dropdown-submenu">
+				<a  href="#">2018</a>
+                <ul class="dropdown-menu">
+                  <li><a  href="#!/trophy18">Tappe</a></li>
+                  <li><a href="#!/classifica18">Asolo</a></li>
+				  <li><a href="#!/accessoFinale18">Classifica Trophy</a></li>
+                  <li><a href="#!/regolamento">Regolamento</a></li>
+		          
+                </ul>
+				  
+			  <li class="dropdown-submenu">
+				<a  href="#">2019</a>
+                <ul class="dropdown-menu">
+                  <li><a  href="#!/trophy19">Tappe</a></li>
+					<li><a href="#!/classifica19">Classifica</a></li>
+				  <li><a href="#!/regolamento19">Regolamento</a></li>
+					<li><a href="#!/premi">Premi</a></li>
+				</ul>
+			  </li>
+              
+              <li class="dropdown-submenu">
+				<a  href="#">2020</a>
+                <ul class="dropdown-menu">
+                  	<li><a  href="#!/trophy20">Tappe</a></li>
+					<li><a href="#!/regolamento20">Regolamento</a></li>
+<!-- 
+            		<li><a href="#!/classifica20">Classifica</a></li>
+					<li><a href="#!/accessoFinale20">Accesso Finale</a></li>
+					
+					<li><a href="#!/premi">Premi</a></li>
+-->
+				</ul>
+			  </li>
+			
+</ul>
+
+			
+					
+
+                                        
+					<li ng-class="{active: section=='mailing'}"><a href="#!/mailing">Mailing list</a></li>
+				
+				
+				<ul class="nav navbar-nav navbar-right">
+
+
+				
+					<li ng-class="{active: section=='contatti'}"><a href="#!/contatti">Contatti</a></li>
+				
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+			<div ng-view>
+			<!-- Angular content here -->
+
+		</div>
+	</div>
+</body>
+<!-- bower:js -->
+<script src="libs/jquery/dist/jquery.js"></script>
+<script src="libs/bootstrap/dist/js/bootstrap.js"></script>
+<script src="libs/angular/angular.js"></script>
+<script src="libs/angular-scroll/angular-scroll.js"></script>
+<script src="libs/lodash/lodash.js"></script>
+<script src="libs/blueimp-gallery/js/blueimp-gallery.min.js"></script>
+<!-- endbower -->
+
+
+<script src="libs/angular-route/angular-route.js"></script>
+<script src="libs/angular-count-to/build/angular-count-to.min.js"></script>
+<script src="app.js"></script>
+<script src="home/home.js"></script>
+<script src="trophy/trophy.js"></script>
+<script src="trophy18/trophy18.js"></script>
+<script src="trophy19/trophy19.js"></script>
+<script src="trophy20/trophy20.js"></script>
+<script src="classifica/classifica.js"></script>
+<script src="classifica18/classifica18.js"></script>
+<script src="accessoFinale18/accessoFinale18.js"></script>
+<script src="classificaTrophy/classificaTrophy.js"></script>
+<script src="regolamento/regolamento.js"></script>
+<script src="regolamento19/regolamento19.js"></script>
+<script src="regolamento20/regolamento20.js"></script>
+<script src="classifica19/classifica19.js"></script>
+<script src="premi/premi.js"></script>
+<script src="mailing/mailing.js"></script>
+<script src="contatti/contatti.js"></script>
+<script src="storia/storia.js"></script>
+<script src="statuto/statuto.js"></script>
+<script src="clubs/clubs.js"></script>
+<script src="convenzioni/convenzioni.js"></script>
+<script src="galleries/tappa1/tappa1.js"></script>
+<script src="galleries/tappa2/tappa2.js"></script>
+<script src="components/version/version.js"></script>
+<script src="components/version/version-directive.js"></script>
+<script src="components/version/interpolate-filter.js"></script>
+</html>

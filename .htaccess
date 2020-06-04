@@ -1,0 +1,6 @@
+IndexOptions +Charset=UTF-8
+AddDefaultCharset UTF-8
+AuthType Basic
+AuthName "Test sito ACP"
+AuthUserFile /homez.31/golfclubeo/acp/.htpasswd
+require valid-user

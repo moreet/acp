@@ -1,0 +1,153 @@
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+
+
+
+
+.transparent {
+	background: rgba(245, 245, 245, 0.8);
+}
+.body{
+	background-image: url('../img/bg.jpg'); background-size:100% auto;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: 'Averia Sans Libre', cursive;
+}
+
+.bg1{
+	background-image: url('../img/bg1.jpg'); background-size:100% auto;
+}
+
+.bg2{
+	background-image: url('../img/bg2.jpg'); background-size:100% auto;
+}
+
+.bg3{
+	background-image: url('../img/bg3.jpg'); background-size:100% auto;
+}
+
+.bg4{
+	background-image: url('../img/bg4.jpg'); background-size:100% auto;
+}
+
+.big{
+	font-size:46px;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.carousel-caption {
+      max-width: 550px;
+      padding: 0 20px;
+      margin:0 auto;
+      margin-top: 200px;
+      text-align:center;
+}
+
+
+.golfClubImgs {
+	height: 200px;
+	max-height: 300px;
+	/*width: 1200px;*/
+	overflow: hidden;
+}
+
+.arrow_dx{
+	background-image: url('../img/arrow_dx.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 0% 100%;
+	margin-top: 100px;
+	height: 120px;
+}
+
+.arrow_dx_sm{
+	background-image: url('../img/arrow_dx_sm.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 0% 100%;
+	margin-top: 100px;
+	height: 120px;
+}
+
+.arrow_sx_sm{
+	background-image: url('../img/arrow_sx_sm.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 90% 100%;
+	margin-top: 100px;
+	height: 120px;
+}
+
+.arrow_sx{
+	background-image: url('../img/arrow_sx.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 80% 100%;
+	margin-top: 100px;
+	height: 120px;
+}
+
+.finale{
+	background-image: url('../img/finale.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 50% 0%;
+	height: 470px;
+}
+
+.logo{
+	margin-top: 5px;
+	margin-left: 20px;
+}
+
+

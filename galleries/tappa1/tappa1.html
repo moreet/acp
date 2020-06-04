@@ -1,0 +1,60 @@
+<div class="well transparent">
+	<div class="row text-center">
+		<h1>Galleria: 1a tappa Jesolo Golf Club</h1>
+	</div>
+	<br/>
+
+
+	<div id="blueimp-gallery" class="blueimp-gallery">
+		<div class="slides"></div>
+		<h3 class="title"></h3>
+		<a class="prev">‹</a>
+		<a class="next">›</a>
+		<a class="close">×</a>
+		<a class="play-pause"></a>
+		<ol class="indicator"></ol>
+	</div>
+
+	<div id="links">
+		<a href="../img/galleries/tappa1/foto01.jpg" title="">
+			<img width="200px" src="../img/galleries/tappa1/foto01.jpg" alt="">
+		</a>
+		<a href="../img/galleries/tappa1/foto02.jpg" title="">
+			<img width="200px" src="../img/galleries/tappa1/foto02.jpg" alt="">
+		</a>
+		<a href="../img/galleries/tappa1/foto03.jpg" title="">
+			<img width="200px" src="../img/galleries/tappa1/foto03.jpg" alt="">
+		</a>
+		<a href="../img/galleries/tappa1/foto04.jpg" title="">
+			<img width="200px" src="../img/galleries/tappa1/foto04.jpg" alt="">
+		</a>
+		<a href="../img/galleries/tappa1/foto05.jpg" title="">
+			<img width="200px" src="../img/galleries/tappa1/foto05.jpg" alt="">
+		</a>
+
+		<a href="../img/galleries/tappa1/foto06.jpg" title="">
+			<img width="200px" src="../img/galleries/tappa1/foto06.jpg" alt="">
+		</a>
+
+	
+	</div>
+
+
+	<script>
+document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+</script>
+
+
+	
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+</div>
