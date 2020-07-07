@@ -11,6 +11,7 @@ angular.module('myApp', [
   'myApp.classifica',
   'myApp.classifica18',
   'myApp.classifica19',
+  'myApp.classifica20',
   'myApp.accessoFinale18',
   'myApp.trophy19',
   'myApp.trophy20',
